@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stone Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Stone Paper Scissors</h1>
+    <div class="choices">
+      <div class="choice" onclick="playGame('rock')">
+        <img src="https://img.icons8.com/emoji/96/rock.png" alt="Rock">
+        <p>Rock</p>
+      </div>
+      <div class="choice" onclick="playGame('paper')">
+        <img src="https://img.icons8.com/emoji/96/page-facing-up.png" alt="Paper">
+        <p>Paper</p>
+      </div>
+      <div class="choice" onclick="playGame('scissors')">
+        <img src="https://img.icons8.com/emoji/96/scissors.png" alt="Scissors">
+        <p>Scissors</p>
+      </div>
+    </div>
+    <div class="result">
+      <p id="player-choice"></p>
+      <p id="computer-choice"></p>
+      <h2 id="winner" class="animate"></h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
